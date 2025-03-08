@@ -114,20 +114,22 @@ printf("Quiz Finished!\n");
 sleep(1);
 printf("Score: %d\n", score);
 sleep(2);
-if (score == 1) {
-  printf("Rank: Normie\n");
-} else if (score == 2) {
-printf("Rank: Mid\n");
-}else if (score == 3) {
-printf("Rank: Above-Average\n");
-}else if (score == 4) {
-printf("Rank: Based");
-}else if (score == 5) {
-printf("Rank: Luke Smith\n");
-}else if (score == 6) {
-printf("Rank: Gigachad\n");
-}else {
-printf("GET OUT!\n");
+
+switch (score) {
+case 0:
+    printf("GET OUT!\n");
+case 1:
+    printf("Rank: Normie\n");
+case 2:
+    printf("Rank: Mid\n");
+case 3:
+    printf("Rank: Above-Average\n");
+case 4:
+    printf("Rank: Based\n");
+case 5:
+    printf("Rank: Luke Smith\n");
+case 6:
+    printf("Rank: Gigachad\n");
 }
 
 }
